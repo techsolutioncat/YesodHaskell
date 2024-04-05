@@ -1,0 +1,19 @@
+stack upgrade
+stack new my-project
+cd my-project
+stack build
+stack exec my-project-exe
+
+
+
+
+stack install yesod-bin --install-ghc
+
+
+Yesod Haskell Web Framework
+stack new my-project yesodweb/sqlite && cd my-project
+stack install yesod-bin --install-ghc
+stack build
+stack exec -- yesod devel
+
+View your Yesod site at http://localhost:3000/
