@@ -116,13 +116,33 @@ instance Yesod App where
                     , menuItemRoute = HomeR
                     , menuItemAccessCallback = True
                     }
+                ,NavbarLeft $ MenuItem
+                    { menuItemLabel = "Endpoints"
+                    , menuItemRoute = ProfileR
+                    , menuItemAccessCallback = True
+                    }
+                ,NavbarLeft $ MenuItem
+                    { menuItemLabel = "Pricing"
+                    , menuItemRoute = ProfileR
+                    , menuItemAccessCallback = True
+                    }
+                ,NavbarLeft $ MenuItem
+                    { menuItemLabel = "Documentation"
+                    , menuItemRoute = ProfileR
+                    , menuItemAccessCallback = True
+                    }
+                ,NavbarLeft $ MenuItem
+                    { menuItemLabel = "Discord"
+                    , menuItemRoute = ProfileR
+                    , menuItemAccessCallback = True
+                    }
                 , NavbarLeft $ MenuItem
                     { menuItemLabel = "Profile"
                     , menuItemRoute = ProfileR
                     , menuItemAccessCallback = isJust muser
                     }
                 , NavbarRight $ MenuItem
-                    { menuItemLabel = "Login"
+                    { menuItemLabel = "Login with Steam"
                     , menuItemRoute = AuthR LoginR
                     , menuItemAccessCallback = isNothing muser
                     }
@@ -147,7 +167,8 @@ instance Yesod App where
 
         pc <- widgetToPageContent $ do
             addStylesheet $ StaticR css_bootstrap_css
-                                    -- ^ generated from @Settings/StaticFiles.hs@
+            addStylesheet $ StaticR css_common_css
+                -- ^ generated from @Settings/StaticFiles.hs@
             $(widgetFile "default-layout")
         withUrlRenderer $(hamletFile "templates/default-layout-wrapper.hamlet")
 
@@ -218,6 +239,7 @@ instance YesodBreadcrumbs App where
         :: Route App  -- ^ The route the user is visiting currently.
         -> Handler (Text, Maybe (Route App))
     breadcrumb HomeR = return ("Home", Nothing)
+    -- breadcrumb EndpointsR = return ("Endpoints", Nothing)
     breadcrumb (AuthR _) = return ("Login", Just HomeR)
     breadcrumb ProfileR = return ("Profile", Just HomeR)
     breadcrumb  _ = return ("home", Nothing)

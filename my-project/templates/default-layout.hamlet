@@ -10,41 +10,47 @@
                 <span class="icon-bar">
 
         <div #navbar .collapse.navbar-collapse>
+            <div .main-logo>
+                <a href="#" .logo>
+                    <img src="/static/images/logo.svg" alt="Logo Image" />
+                    <h4>Steam Developer API</h4>
+
             <ul .nav.navbar-nav>
                 $forall MenuItem label route _ <- navbarLeftFilteredMenuItems
-                    <li :Just route == mcurrentRoute:.active>
+                    $# <li :Just route == mcurrentRoute:.active>
+                    <li>
                         <a href="@{route}">#{label}
 
             <ul .nav.navbar-nav.navbar-right>
                 $forall MenuItem label route _ <- navbarRightFilteredMenuItems
                     <li :Just route == mcurrentRoute:.active>
-                        <a href="@{route}">#{label}
+                        <a href="@{route}" .site-button><i class="fa fa-steam"></i>#{label}
 
 <!-- Page Contents -->
 
-<div .container>
-    $if not $ Just HomeR == mcurrentRoute
-        <ul .breadcrumb>
-            $forall bc <- parents
-                <li>
-                    <a href="@{fst bc}">#{snd bc}
+$# <div .container>
+$#     $if not $ Just HomeR == mcurrentRoute
+$#         <ul .breadcrumb>
+$#             $forall bc <- parents
+$#                 <li>
+$#                     <a href="@{fst bc}">#{snd bc}
 
-            <li .active>#{title}
+$#             <li .active>#{title}
 
-    $maybe msg <- mmsg
-      <div .alert.alert-info #message>#{msg}
+$#     $maybe msg <- mmsg
+$#       <div .alert.alert-info #message>#{msg}
 
 
-$if (Just HomeR == mcurrentRoute)
-    ^{widget}
-$else
-    <div .container>
-        <div .row>
-            <div .col-md-12>
-                ^{widget}
+$# $if (Just HomeR == mcurrentRoute)
+$#     ^{widget}
+$# $else
+$#     <div .container>
+$#         <div .row>
+$#             <div .col-md-12>
+$#                 ^{widget}
 
-<!-- Footer -->
-<footer .footer>
-    <div .container>
-        <p .text-muted>
-            #{appCopyright $ appSettings master}
+$# <!-- Footer -->
+$# <footer .footer>
+$#     <div .container>
+$#         <p .text-muted>
+$#             #{appCopyright $ appSettings master}

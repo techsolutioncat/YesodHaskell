@@ -1,0 +1,55 @@
+/* Begin Header Style CSS */
+
+#navbar {
+    margin-top: 15px;
+}
+@media (min-width: 768px) {
+    #navbar {
+        display: flex !important;
+        justify-content: space-between;
+    }
+}
+.navbar-default .navbar-nav > .active > a.site-button,
+a.site-button,
+a.site-button:hover
+{
+    background: rgb(65, 161, 86);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+    border-bottom: none;
+}
+a.site-button > i{
+    margin-right: 10px;
+}
+#navbar .main-logo a.logo,
+#navbar .main-logo a.logo
+{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+#navbar .main-logo a.logo img {
+    width: 45px;
+    border: solid 1px #fff;
+    margin-right: 10px;
+}
+#navbar .main-logo a.logo h4 {
+    margin: 0px;
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+    #navbar .main-logo {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-right li {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        margin-left: 15px;
+    }
+}
