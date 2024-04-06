@@ -8,20 +8,19 @@
                 <span class="icon-bar">
                 <span class="icon-bar">
                 <span class="icon-bar">
-
-        <div #navbar .collapse.navbar-collapse>
-            <div .main-logo>
+        <div #navbar .collapse.navbar-collapse.row>
+            <div .main-logo.col-md-3>
                 <a href="#" .logo>
                     <img src="/static/images/logo.svg" alt="Logo Image" />
                     <h4>Steam Developer API</h4>
 
-            <ul .nav.navbar-nav>
+            <ul .nav.navbar-nav.col-md-6>
                 $forall MenuItem label route _ <- navbarLeftFilteredMenuItems
                     $# <li :Just route == mcurrentRoute:.active>
                     <li>
                         <a href="@{route}">#{label}
 
-            <ul .nav.navbar-nav.navbar-right>
+            <ul .nav.navbar-nav.navbar-right.col-md-3>
                 $forall MenuItem label route _ <- navbarRightFilteredMenuItems
                     <li :Just route == mcurrentRoute:.active>
                         <a href="@{route}" .site-button><i class="fa fa-steam"></i>#{label}
@@ -41,13 +40,13 @@ $#     $maybe msg <- mmsg
 $#       <div .alert.alert-info #message>#{msg}
 
 
-$# $if (Just HomeR == mcurrentRoute)
-$#     ^{widget}
-$# $else
-$#     <div .container>
-$#         <div .row>
-$#             <div .col-md-12>
-$#                 ^{widget}
+$if (Just HomeR == mcurrentRoute)
+    ^{widget}
+$else
+    <div .container>
+        <div .row>
+            <div .col-md-12>
+                ^{widget}
 
 $# <!-- Footer -->
 $# <footer .footer>

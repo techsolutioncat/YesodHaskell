@@ -1,7 +1,7 @@
 /* Begin Header Style CSS */
 
 #navbar {
-    margin-top: 15px;
+    margin-top: 30px;
 }
 @media (min-width: 768px) {
     #navbar {
@@ -9,15 +9,21 @@
         justify-content: space-between;
     }
 }
+.navbar-default .navbar-nav {
+    display: flex;
+    justify-content: right;
+}
 .navbar-default .navbar-nav > .active > a.site-button,
 a.site-button,
 a.site-button:hover
 {
     background: rgb(65, 161, 86);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 15px;
     border-radius: 6px;
     border-bottom: none;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
 }
 a.site-button > i{
     margin-right: 10px;
@@ -31,8 +37,9 @@ a.site-button > i{
 }
 #navbar .main-logo a.logo img {
     width: 45px;
-    border: solid 1px #fff;
+    border: solid 1px #4e4e4e;
     margin-right: 10px;
+    border-radius: 5px;
 }
 #navbar .main-logo a.logo h4 {
     margin: 0px;
@@ -52,4 +59,12 @@ a.site-button > i{
         justify-content: left;
         margin-left: 15px;
     }
+    .navbar-default .navbar-nav {
+        flex-direction: column;
+    }
+}
+
+/* Common custom style css */
+.half-width {
+    width: 100%;
 }

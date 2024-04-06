@@ -118,27 +118,27 @@ instance Yesod App where
                     }
                 ,NavbarLeft $ MenuItem
                     { menuItemLabel = "Endpoints"
-                    , menuItemRoute = ProfileR
+                    , menuItemRoute = HomeR
                     , menuItemAccessCallback = True
                     }
                 ,NavbarLeft $ MenuItem
                     { menuItemLabel = "Pricing"
-                    , menuItemRoute = ProfileR
+                    , menuItemRoute = HomeR
                     , menuItemAccessCallback = True
                     }
                 ,NavbarLeft $ MenuItem
                     { menuItemLabel = "Documentation"
-                    , menuItemRoute = ProfileR
+                    , menuItemRoute = HomeR
                     , menuItemAccessCallback = True
                     }
                 ,NavbarLeft $ MenuItem
                     { menuItemLabel = "Discord"
-                    , menuItemRoute = ProfileR
+                    , menuItemRoute = HomeR
                     , menuItemAccessCallback = True
                     }
                 , NavbarLeft $ MenuItem
                     { menuItemLabel = "Profile"
-                    , menuItemRoute = ProfileR
+                    , menuItemRoute = HomeR
                     , menuItemAccessCallback = isJust muser
                     }
                 , NavbarRight $ MenuItem

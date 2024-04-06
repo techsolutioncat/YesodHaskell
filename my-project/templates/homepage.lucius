@@ -1,13 +1,32 @@
-h2##{aDomId} {
-    color: #990
+#hero {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 75px;
 }
 
-li {
-    line-height: 2em;
-    font-size: 16px
+#hero .left-textbox {
+    padding-right: 100px;
 }
 
-##{commentTextareaId} {
-    width: 400px;
-    height: 100px;
+#hero .left-textbox .hero-button {
+    margin-top: 28px;
+}
+
+#hero .right-api-window .hero-image img {
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    #hero {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    #hero .right-api-window  {
+        margin-top: 30px;
+    }
+    #hero .left-textbox {
+        padding-right: 15px;
+    }
 }
