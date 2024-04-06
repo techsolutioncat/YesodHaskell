@@ -10,7 +10,7 @@
                 <span class="icon-bar">
         <div #navbar .collapse.navbar-collapse.row>
             <div .main-logo.col-md-3>
-                <a href="#" .logo>
+                <a href=@{HomeR} .logo>
                     <img src="/static/images/logo.svg" alt="Logo Image" />
                     <h4>Steam Developer API</h4>
 
