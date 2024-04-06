@@ -1,5 +1,7 @@
 /* Begin Header Style CSS */
-
+body {
+    background: #1f1f20;
+}
 #navbar {
     margin-top: 30px;
 }
@@ -62,6 +64,15 @@ a.site-button > i{
     .navbar-default .navbar-nav {
         flex-direction: column;
     }
+}
+
+/* Footer style css */
+footer.footer {
+    text-align: center;
+    color: #adadad;
+    padding: 15px;
+    border-top: solid 1px #4e4e4e;
+    margin-top: 25px;
 }
 
 /* Common custom style css */

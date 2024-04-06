@@ -9,4 +9,29 @@
             <div .right-api-window.col-md-6.col-xs-12>
                 <div .hero-image>
                     <img src="/static/images/response-example.png">
-            
+
+        <div #cardList>
+            <div .card-item>
+                <i class="fa fa-lock"></i>
+                <h5 .card-title>Inventory Endpoint</h5>
+                <p .card-text>Get all items in a player's inventory</p>
+            <div .card-item>
+                <i class="fa fa-male"></i>
+                <h5 .card-title>Profile Endpoint</h5>
+                <p .card-text>Get a profile's information</p>
+            <div .card-item>
+                <i class="fa fa-bar-chart-o"></i>
+                <h5 .card-title>Market Data Endpoint</h5>
+                <p .card-text>Get data of any item in the market</p>
+            <div .card-item>
+                <i class="fa fa-shopping-cart"></i>
+                <h5 .card-title>Market Endpoint</h5>
+                <p .card-text>Get all items in the market</p>
+            <div .card-item>
+                <i class="fa fa-dropbox"></i>
+                <h5 .card-title>Inventory Price Endpoint</h5>
+                <p .card-text>Get the total price of a player's inventory</p>
+            <div .card-item>
+                <i class="fa fa-lock"></i>
+                <h5 .card-title>Placeholder Endpoint</h5>
+                <p .card-text>Lorem ipsum dolor sit amet, consectetur</p>

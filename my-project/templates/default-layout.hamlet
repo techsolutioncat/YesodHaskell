@@ -48,8 +48,8 @@ $else
             <div .col-md-12>
                 ^{widget}
 
-$# <!-- Footer -->
-$# <footer .footer>
-$#     <div .container>
-$#         <p .text-muted>
-$#             #{appCopyright $ appSettings master}
+<!-- Footer -->
+<footer .footer>
+    <div .container>
+        <p .text-muted>
+            #{appCopyright $ appSettings master}
