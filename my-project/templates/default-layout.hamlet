@@ -3,6 +3,11 @@
 <nav .navbar.navbar-default.navbar-static-top>
     <div .container>
         <div .row>
+            <div .navbar-header.col-md-12.ipad-logo>
+                <div .main-logo>
+                    <a href=@{HomeR} .logo>
+                        <img src="/static/images/logo.svg" alt="Logo Image" />
+                        <h4>Steam Developer API</h4>
             <div .navbar-header.col-md-12>
                 <div .main-logo.mobile-logo>
                     <a href=@{HomeR} .logo>

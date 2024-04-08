@@ -32,7 +32,7 @@ getHomeR = do
     defaultLayout $ do
         let (commentFormId, commentTextareaId, commentListId) = commentIds
         aDomId <- newIdent
-        setTitle "Welcome To Yesod!"
+        setTitle "Steam Developer API"
         $(widgetFile "homepage")
 
 postHomeR :: Handler Html
@@ -47,7 +47,7 @@ postHomeR = do
     defaultLayout $ do
         let (commentFormId, commentTextareaId, commentListId) = commentIds
         aDomId <- newIdent
-        setTitle "Welcome To Yesod!"
+        setTitle "Steam Developer API"
         $(widgetFile "homepage")
 
 sampleForm :: Form FileForm

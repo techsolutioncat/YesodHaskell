@@ -30,6 +30,9 @@ a.site-button:hover
 a.site-button > i{
     margin-right: 10px;
 }
+.ipad-logo .main-logo {
+    display: none;
+}
 .navbar-header .main-logo.mobile-logo {
     display: none;
     width: 100%;
@@ -57,6 +60,12 @@ a.site-button > i{
     justify-content: space-between;
     margin-top: 10px;
 }
+.ipad-logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
 @media (max-width: 1199px) {
     #navbar .main-logo a.logo h4 {
         font-size: 15px;
@@ -66,6 +75,12 @@ a.site-button > i{
 @media (max-width: 991px) {
     #navbar .main-logo {
         display: none;
+    }
+    .ipad-logo .main-logo {
+        display: block;
+    }
+    #navbar {
+        margin-top: 0px;
     }
 }
 
@@ -81,6 +96,12 @@ a.site-button > i{
     }
     .navbar-header .main-logo.mobile-logo {
         display: block;
+    }
+    .ipad-logo .main-logo {
+        display: none;
+    }
+    #navbar {
+        margin-top: 20px;
     }
 }
 
