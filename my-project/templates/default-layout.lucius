@@ -71,3 +71,7 @@
 #message {
     margin-bottom: 40px;
 }
+
+#audioPlayer {
+  display: none;
+}

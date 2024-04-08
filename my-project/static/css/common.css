@@ -30,22 +30,37 @@ a.site-button:hover
 a.site-button > i{
     margin-right: 10px;
 }
-#navbar .main-logo a.logo,
-#navbar .main-logo a.logo
+.navbar-header .main-logo.mobile-logo {
+    display: none;
+    width: 100%;
+}
+.main-logo a.logo,
+.main-logo a.logo
 {
     text-decoration: none;
     display: flex;
     align-items: center;
 }
-#navbar .main-logo a.logo img {
+.main-logo a.logo img {
     width: 45px;
     border: solid 1px #4e4e4e;
     margin-right: 10px;
     border-radius: 5px;
 }
-#navbar .main-logo a.logo h4 {
+.main-logo a.logo h4 {
     margin: 0px;
     color: #fff;
+}
+.navbar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+@media (max-width: 1199px) {
+    #navbar .main-logo a.logo h4 {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -63,6 +78,9 @@ a.site-button > i{
     }
     .navbar-default .navbar-nav {
         flex-direction: column;
+    }
+    .navbar-header .main-logo.mobile-logo {
+        display: block;
     }
 }
 

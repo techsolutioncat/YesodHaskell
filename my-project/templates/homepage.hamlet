@@ -1,3 +1,5 @@
+<audio id="audioPlayer" src="/static/images/background-audio.mp3" autoplay loop controls></audio>
+
 <div .masthead>
     <div .container>
         <div .row #hero>

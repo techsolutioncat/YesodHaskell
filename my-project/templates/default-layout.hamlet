@@ -2,12 +2,17 @@
 <!-- Static navbar -->
 <nav .navbar.navbar-default.navbar-static-top>
     <div .container>
-        <div .navbar-header>
-            <button type="button" .navbar-toggle.collapsed data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation
-                <span class="icon-bar">
-                <span class="icon-bar">
-                <span class="icon-bar">
+        <div .row>
+            <div .navbar-header.col-md-12>
+                <div .main-logo.mobile-logo>
+                    <a href=@{HomeR} .logo>
+                        <img src="/static/images/logo.svg" alt="Logo Image" />
+                        <h4>Steam Developer API</h4>
+                <button type="button" .navbar-toggle.collapsed data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation
+                    <span class="icon-bar">
+                    <span class="icon-bar">
+                    <span class="icon-bar">
         <div #navbar .collapse.navbar-collapse.row>
             <div .main-logo.col-md-3>
                 <a href=@{HomeR} .logo>
